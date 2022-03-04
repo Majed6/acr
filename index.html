@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
+        <script id="scripts">
+function handleAutoCastCommand(command){
+  document.getElementById("logger").value = 0.1;
+};
+      function handleAutoCastSet(el,v) {
+        document.getElementById("logger").value = 0.5;
+      }
+</script>
   </head>
   <body>
     <meter id="logger" style="color: red;" value="1">Mouse</meter>
