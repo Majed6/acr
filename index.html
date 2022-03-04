@@ -5,13 +5,13 @@
     <title>My test page</title>
   </head>
   <body>
-    <div id="logger" style="color: red;">Mouse</div>
+    <meter> id="logger" style="color: red;" value="1">Mouse</meter>
     <script>
 function handleAutoCastCommand(command){
-  document.getElementById("logger").innerHTML = "cat 1";
+  document.getElementById("logger").value = 0.1;
 };
       function handleAutoCastSet(el,v) {
-        document.getElementById("logger").innerHTML = "cat 1";
+        document.getElementById("logger").value = 0.5;
       }
 </script>
   </body>
